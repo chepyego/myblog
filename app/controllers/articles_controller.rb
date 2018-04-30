@@ -3,13 +3,17 @@ class ArticlesController < ApplicationController
 
 	def index
 		@articles = Article.all
-
+    end
 
 		def show
+            @articles = Article.all
 			@article=Article.find(params[:id])
+            @comment = Comment.new
+            @comment.article_id = @article.id
 
-		end
-	end
+
+		 end
+
 
 
 	def new
@@ -21,6 +25,7 @@ class ArticlesController < ApplicationController
 				@article.save
 				flash.notice = "Article '#{@article.title}' created!"
 				redirect_to	article_path(@article)
+            
     end
              def destroy
              	@article=Article.find(params[:id])
