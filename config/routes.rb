@@ -7,5 +7,6 @@ resources :articles do
 
 
 end
+resources :tags
 
 end

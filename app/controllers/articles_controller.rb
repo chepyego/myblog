@@ -12,6 +12,7 @@ class ArticlesController < ApplicationController
             @comment.article_id = @article.id
 
 
+
 		 end
 
 
@@ -20,8 +21,8 @@ class ArticlesController < ApplicationController
 		@article=Article.new
 	end
 	def create
-		
-		@article	=	Article.new(article_params)
+	
+		@article=Article.new(article_params)
 				@article.save
 				flash.notice = "Article '#{@article.title}' created!"
 				redirect_to	article_path(@article)
