@@ -10,6 +10,7 @@ class Article < ActiveRecord::Base
 		self.tags.collect do |tag|
 			tag.name
 		end.join(", ")
+		
 
 
         
@@ -18,6 +19,11 @@ class Article < ActiveRecord::Base
 		new_or_found_tags = tag_names.collect{ |name| Tag.find_or_create_by(name: name) }
 		self.tags = new_or_found_tags
         end
+        
+        
+        
+   
+      
 	 
 		
 	end

@@ -1,0 +1,19 @@
+current directory: /home/jemimah/blogger/vendor/bundle/ruby/2.3.0/gems/byebug-5.0.0/ext/byebug
+/home/jemimah/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20180515-23406-zp7rpy.rb extconf.rb
+creating Makefile
+
+current directory: /home/jemimah/blogger/vendor/bundle/ruby/2.3.0/gems/byebug-5.0.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/jemimah/blogger/vendor/bundle/ruby/2.3.0/gems/byebug-5.0.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling threads.c
+compiling locker.c
+compiling byebug.c
+compiling context.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/jemimah/blogger/vendor/bundle/ruby/2.3.0/gems/byebug-5.0.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20180515-23406-1881k7z/byebug
